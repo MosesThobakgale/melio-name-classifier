@@ -1,7 +1,7 @@
 
 # Name Classifier - Person, Company, or University
 
-This repository contains a machine learning solution for classifying text strings (names) into one of three categories: `Person`, `Company`, or `University`. It was developed as part of the **Melio Fullstack Data Scientist Technical Interview**.
+This repository contains a machine learning solution for classifying text strings (names) into one of three categories: `Person`, `Company`, or `University`. It was developed as part of the **Melio ML Engineer Interview**.
 
 
 ## Summary & Critical Evaluation
