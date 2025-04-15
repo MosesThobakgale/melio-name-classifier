@@ -7,7 +7,7 @@ COPY ./deployment/serve-requirements.txt .
 RUN pip install --no-cache-dir  -r serve-requirements.txt
 
 # Make custom src code visible
-COPY ./src /app/src
+
 ENV PYTHONPATH "${PYTHONPATH}:/app"
 
 # Trained model and definition with main script
