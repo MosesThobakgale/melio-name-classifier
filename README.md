@@ -1,7 +1,7 @@
 
 # Name Classifier - Person, Company, or University
 
-This repository contains a machine learning solution for classifying text strings (names) into one of three categories: `Person`, `Company`, or `University`. It was developed as part of the **Melio ML Engineer Interview**.
+This repository contains a machine learning solution for classifying text strings (names) into one of three categories: `Person`, `Company`, or `University`.
 
 
 ## Summary & Critical Evaluation
@@ -30,13 +30,13 @@ Ensure you have **Docker installed**.
 ### 1. Build the Docker image:
 
 ```bash
-docker build -t local/highwind/model-v1 -f deployment/Dockerfile .
+docker build -t local/classifier/model-v1 -f deployment/Dockerfile .
 ```
 
 ### 2. Run the container:
 
 ```bash
-docker run -p 8080:8080 local/highwind/model-v1
+docker run -p 8080:8080 local/classifier/model-v1
 ```
 
 The API will now be available at `http://localhost:8080`.
@@ -46,7 +46,7 @@ The API will now be available at `http://localhost:8080`.
 ```bash
 curl -X POST http://0.0.0.0:8080/v1/models/model:predict \
      -H "Content-Type: application/json" \
-     -d '{"instances": ["Melio AI LTD","Moses Thobakgale"]}'
+     -d '{"instances": ["The AI Team LTD","Moses Thobakgale"]}'
 
 
 ```
